@@ -26,4 +26,13 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the volunteer associated with this user.
+     */
+    public function volunteer()
+    {
+        return $this->hasOne('App\Volunteer');
+    }
+
 }

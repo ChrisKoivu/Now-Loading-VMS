@@ -15,6 +15,7 @@ class CreateEmergencyContactsTable extends Migration
     {
         Schema::create('emergency_contacts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('volunteers_id');
             $table->timestamps();
         });
     }

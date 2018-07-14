@@ -15,6 +15,10 @@ class CreateVolunteersTable extends Migration
     {
         Schema::create('volunteers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('first_name');
+            $table->string('last_name');
+            // FK to users table. 
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
