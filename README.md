@@ -47,6 +47,18 @@ type this command to create the laravel app, replace 'projectname' with the name
     
     composer create-project --prefer-dist laravel/laravel projectname
 
+# Create User at Command Line
+To create a standard user at the command line, do the following:
+
+ 
+    php artisan tinker
+    $user = new App\User;
+    $user->name="Admin";
+    $user->email="admin@localhost.com";
+    $user->password=bcrypt('1234');
+    $user->save();
+ 
+
 
 # Create  Admin User
 To designate a registered user as an admin, type the following
