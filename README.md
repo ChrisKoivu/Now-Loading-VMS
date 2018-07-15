@@ -49,7 +49,7 @@ type this command to create the laravel app, replace 'projectname' with the name
 
 
 # Create  Admin User
-To designate the user as an admin, type the following
+To designate a registered user as an admin, type the following
 at the command line:<br>
      
      php artisan tinker
