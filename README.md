@@ -44,5 +44,5 @@ make sure your PHP installation has these requirements:
 MAMP & Wampserver will take care of these requirements
 
 type this command to create the laravel app, replace 'projectname' with the name of the application
-<br>composer create-project--prefer-dist laravel/laravel projectname
+<br><br>composer create-project--prefer-dist laravel/laravel projectname
 
