@@ -41,8 +41,8 @@ make sure your PHP installation has these requirements:
 * Ctype PHP Extension 
 * JSON PHP Extension
 
-* MAMP & Wampserver will take care of these requirements
+MAMP & Wampserver will take care of these requirements
 
 type this command to create the laravel app, replace 'projectname' with the name of the application
-composer create-project--prefer-dist laravel/laravel projectname
+# composer create-project--prefer-dist laravel/laravel projectname
 
