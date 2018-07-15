@@ -50,8 +50,8 @@ type this command to create the laravel app, replace 'projectname' with the name
 To designate the user as an admin, type the following
 at the command line:<br>
      
-     php artisan tinker<br>
-     use App\User;<br>
-     User::where('email', 'admin@admin.com')->update(['role' => 'admin']);<br>
+     php artisan tinker
+     use App\User;
+     User::where('email', 'admin@admin.com')->update(['role' => 'admin']);
     
 
