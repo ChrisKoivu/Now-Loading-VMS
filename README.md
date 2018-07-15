@@ -45,7 +45,7 @@ MAMP & Wampserver will take care of these requirements
 
 type this command to create the laravel app, replace 'projectname' with the name of the application
     
-    composer create-project --prefer-dist laravel/laravel <i>projectname</i>
+    composer create-project --prefer-dist laravel/laravel projectname
 
 
 # Create  Admin User
