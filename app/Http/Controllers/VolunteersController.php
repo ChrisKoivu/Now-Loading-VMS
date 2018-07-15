@@ -14,7 +14,7 @@ class VolunteersController extends Controller
     public function index()
     {
         // get all the volunteers saved in the database
-        $volunteers = App\Volunteer::all();;
+        $volunteers = App\Volunteer::all();
         
         return view('volunteers.index', compact('volunteers'));
     }
