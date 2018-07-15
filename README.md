@@ -1,4 +1,4 @@
-# Now Loading Volunteer Management Systen App
+# Now Loading Volunteer Management System App
 
 This is our Pre-Semester Team Project Assignment. The project
 implements an MVC architecture using the Laravel php framework.
@@ -32,14 +32,14 @@ now you can type 'composer' to run on the command line.
 
 make sure your PHP installation has these requirements:
 
-PHP >= 7.1.3 
-OpenSSL PHP Extension 
-PDO PHP Extension 
-Mbstring PHP Extension 
-Tokenizer PHP Extension 
-XML PHP Extension 
-Ctype PHP Extension 
-JSON PHP Extension
+* PHP >= 7.1.3 
+* OpenSSL PHP Extension 
+* PDO PHP Extension 
+* Mbstring PHP Extension 
+* Tokenizer PHP Extension 
+* XML PHP Extension 
+* Ctype PHP Extension 
+* JSON PHP Extension
 
 * MAMP & Wampserver will take care of these requirements
 
