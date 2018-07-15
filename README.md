@@ -13,7 +13,7 @@ For Windows, download Wampserver. It has your full stack which is Apache, MySQL,
 http://www.wampserver.com/en/
 
 # Linux
-For Linux, install a Lamp stack, which is Apache, MySQL, and PHP. Make sure you include PHPMyAdmin.
+For Linux, install a Lamp stack, which is Apache, MySQL, and PHP. Make sure you include PHPMyAdmin. These steps will work with Ubuntu 18.04
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
 # Mac
