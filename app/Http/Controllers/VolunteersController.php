@@ -52,7 +52,7 @@ class VolunteersController extends Controller
     public function show($id)
     {
         //
-        $VolunteerName = auth()->user()->name;
+         
     }
 
     /**
