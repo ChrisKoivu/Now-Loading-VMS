@@ -93,13 +93,6 @@ class Volunteer extends Model
         return $this->hasMany('App\Skill');
     }
 
-    /**
-     * Get the approval status associated with the volunteer.
-     */
-    public function status()
-    {
-        return $this->hasOne('App\Status');
-    }
 
     /**
      * Get the user that the volunteer is associated with.
