@@ -10,10 +10,12 @@ class Volunteer extends Model
      * fields from the User Model
      * ------------------------------
      *  'name', 'email', 'password'
-     *   docs ask for First Name, Last Name, Username, Password, email
+     *  
      * 
      * fields from this model (Volunteer)
      * ------------------------------------
+     *  First Name
+     *  Last  Name
      *  Whether there is a copy of volunteer’s drivers license on file 
      *  Whether there is a copy of volunteer’s social security card on file
      *  Volunteer’s Approval Status 
