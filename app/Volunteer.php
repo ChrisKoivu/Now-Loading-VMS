@@ -9,7 +9,8 @@ class Volunteer extends Model
     /**
      * fields from the User Model
      * ------------------------------
-     * First Name, Last Name, Username, Password, email
+     *  'name', 'email', 'password'
+     *   docs ask for First Name, Last Name, Username, Password, email
      * 
      * fields from this model (Volunteer)
      * ------------------------------------
