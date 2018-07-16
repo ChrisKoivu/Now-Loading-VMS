@@ -32,7 +32,7 @@ class Volunteer extends Model
 
         // to deal with Mass Assignment
         protected $fillable = [
-            'driver_license', 'social_security', 'approval_status',
+            'first_name', 'last_name','dl_on_file', 'ss_card_on_file', 'approval_status',
         ];
 
     
