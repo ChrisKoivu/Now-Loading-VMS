@@ -51,7 +51,7 @@ class VolunteersController extends Controller
      */
     public function show($id)
     {
-       $volunteerName = App\Volunteer::find($id)->user->name;
+       $volunteerName = App\Volunteer::find($id)->user()->name;
          
     }
 
