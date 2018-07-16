@@ -6,6 +6,34 @@ use Illuminate\Database\Eloquent\Model;
 
 class Volunteer extends Model
 {
+    /**
+     * fields from the User Model
+     * ------------------------------
+     * First Name, Last Name, Username, Password, email
+     * 
+     * fields from this model (Volunteer)
+     * ------------------------------------
+     *  Whether there is a copy of volunteer’s drivers license on file 
+     *  Whether there is a copy of volunteer’s social security card on file
+     *  Volunteer’s Approval Status 
+     * 
+     * handled by the isAdmin middleware ###
+     * Administrator adds the volunteer data. 
+     * 
+     * 
+     */
+
+        /**
+         * The attributes that are mass assignable.
+         *
+         * @var array
+         */
+
+        // to deal with Mass Assignment
+        protected $fillable = [
+            'driver_license', 'social_security', 'approval_status',
+        ];
+
     
     /**
      * Get the demographics associated with the volunteer.
