@@ -6,6 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Preference extends Model
 {
+     /** 
+     * 
+     * fields from this model (Preference)
+     * ------------------------------------
+     * Location
+     * Availability Times
+     */
+     
     /**
      * Get the volunteer that the preferences are associated with.
      */

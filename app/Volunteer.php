@@ -20,7 +20,7 @@ class Volunteer extends Model
      *  Whether there is a copy of volunteer’s social security card on file
      *  Volunteer’s Approval Status 
      * 
-     * handled by the isAdmin middleware ###
+     * if authorized by the isAdmin middleware ###
      * Administrator adds the volunteer data. 
      * 
      * 

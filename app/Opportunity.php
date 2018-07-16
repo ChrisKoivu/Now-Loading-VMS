@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Opportunity extends Model
 {
+
+    /**
+     * Fields for this model
+     * Name
+     * Description 
+     */
+
     /**
      * Get the volunteer that owns the opportunity.
      */
