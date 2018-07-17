@@ -18,7 +18,7 @@ class Volunteer extends Model
      *  Last  Name
      *  Whether there is a copy of volunteer’s drivers license on file 
      *  Whether there is a copy of volunteer’s social security card on file
-     *  Volunteer’s Approval Status 
+     *  Volunteer Status ID (status_id)- references to statuses table
      * 
      * if authorized by the isAdmin middleware ###
      * Administrator adds the volunteer data. 
@@ -34,7 +34,8 @@ class Volunteer extends Model
 
         // to deal with Mass Assignment
         protected $fillable = [
-            'first_name', 'last_name','dl_on_file', 'ss_card_on_file', 'approval_status',
+            'first_name', 'last_name','dl_on_file', 
+            'ss_card_on_file', 'status_id',
         ];
 
     
@@ -43,7 +44,7 @@ class Volunteer extends Model
      */
     public function demographics()
     {
-        return $this->hasOne('App\Democraphic');
+        return $this->hasOne('App\Demographic');
     }
 
     /**
@@ -94,6 +95,7 @@ class Volunteer extends Model
     {
         return $this->hasMany('App\Skill');
     }
+
 
 
     /**
