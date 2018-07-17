@@ -47,6 +47,11 @@ type this command to create the laravel app, replace 'projectname' with the name
     
     composer create-project --prefer-dist laravel/laravel projectname
 
+Enter your database credentials in the .env file
+Build database by entering "php artisan migrate"
+
+Seed status table by entering "php artisan db:seed"
+
 # Create User at Command Line
 To create a standard user at the command line, do the following:
 
