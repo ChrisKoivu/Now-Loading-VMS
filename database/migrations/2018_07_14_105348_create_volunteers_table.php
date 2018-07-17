@@ -19,6 +19,8 @@ class CreateVolunteersTable extends Migration
             $table->string('last_name');
             // FK to users table. 
             $table->integer('user_id');
+            // FK to status table. 
+            $table->integer('status_id');
             $table->timestamps();
         });
     }
