@@ -10,8 +10,8 @@ class Preference extends Model
      * 
      * fields from this model (Preference)
      * ------------------------------------
+     * Hours Available
      * Location
-     * Availability Times
      */
      
     /**

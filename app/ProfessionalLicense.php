@@ -8,8 +8,8 @@ class ProfessionalLicense extends Model
 {
     /**
      * Fields for this model
-     * License
-     * 
+     * Name
+     * Description
      * 
      */
 

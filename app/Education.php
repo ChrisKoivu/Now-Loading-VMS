@@ -8,11 +8,9 @@ class Education extends Model
 {
     /**
      * Fields for this model:
-     * ---------------------
-     * Diploma
-     * High School
+     * --------------------
      * Degree
-     * College
+     * School
      * 
      * 
      */
