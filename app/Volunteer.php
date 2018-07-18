@@ -23,10 +23,6 @@ class Volunteer extends Model
      *  1 - Pending Approval, 2 - Approved, 3 - Disapproved,
      *  4 - Inactive
      * 
-     *  Eloquent relationship takes care of this:
-     *  --------------------------
-     *  user_id - references to users table 
-     * 
      * if authorized by the isAdmin middleware ###
      * Administrator adds the volunteer data. 
      * 
