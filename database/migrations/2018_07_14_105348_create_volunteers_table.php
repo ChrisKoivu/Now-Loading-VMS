@@ -17,6 +17,8 @@ class CreateVolunteersTable extends Migration
             $table->increments('id');
             $table->string('first_name');
             $table->string('last_name');
+            $table->boolean('dl_on_file');
+            $table->boolean('ss_card_on_file');
             // FK to users table. 
             $table->integer('user_id');
             // FK to status table. 
