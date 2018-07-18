@@ -15,6 +15,9 @@ class CreateProfessionalLicensesTable extends Migration
     {
         Schema::create('professional_licenses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('description');
+            // FK to volunteers table
             $table->integer('volunteers_id');
             $table->timestamps();
         });

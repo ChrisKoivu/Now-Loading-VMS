@@ -15,6 +15,14 @@ class CreateEmergencyContactsTable extends Migration
     {
         Schema::create('emergency_contacts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('street_address');
+            $table->string('city');
+            $table->string('state');
+            $table->string('zip');
+            $table->string('home_phone');
+            $table->string('work_phone');
+            $table->string('email_address');
+            // FK to volunteers table
             $table->integer('volunteers_id');
             $table->timestamps();
         });

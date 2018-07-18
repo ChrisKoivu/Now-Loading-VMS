@@ -15,6 +15,14 @@ class CreateDemographicsTable extends Migration
     {
         Schema::create('demographics', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('street_address');
+            $table->string('city');
+            $table->string('state');
+            $table->string('zip');
+            $table->string('home_phone');
+            $table->string('work_phone');
+            $table->string('cell_phone');
+            // FK to volunteers table
             $table->integer('volunteers_id');
             $table->timestamps();
         });

@@ -52,7 +52,7 @@ class Volunteer extends Model
      */
     public function education()
     {
-        return $this->hasOne('App\Education');
+        return $this->hasMany('App\Education');
     }
 
     /**
