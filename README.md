@@ -72,9 +72,9 @@ at the command line:<br>
      
      php artisan tinker
      use App\User;
-     User::where('email', 'admin@admin.com')->update(['role' => 'admin']);
+     User::where('email', 'admin@localhost.com')->update(['role' => 'admin']);
 
-replace 'admin@admin.com' with the email address of the registered
+replace 'admin@localhost.com' with the email address of the registered
 user to designate as the admin.
 
 
