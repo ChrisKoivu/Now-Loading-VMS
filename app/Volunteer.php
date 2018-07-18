@@ -11,14 +11,21 @@ class Volunteer extends Model
      * ------------------------------
      *  'name', 'email', 'password'
      *  
-     * 
      * fields from this model (Volunteer)
      * ------------------------------------
-     *  First Name
-     *  Last  Name
-     *  Whether there is a copy of volunteer’s drivers license on file 
-     *  Whether there is a copy of volunteer’s social security card on file
-     *  Volunteer Status ID (status_id)- references to statuses table
+     *  first_name
+     *  last_name
+     *  dl_on_file 
+     *  ss_card_on_file
+     * 
+     *  status_id - references status table
+     *  ------------------------------
+     *  1 - Pending Approval, 2 - Approved, 3 - Disapproved,
+     *  4 - Inactive
+     * 
+     *  Eloquent relationship takes care of this:
+     *  --------------------------
+     *  user_id - references to users table 
      * 
      * if authorized by the isAdmin middleware ###
      * Administrator adds the volunteer data. 
