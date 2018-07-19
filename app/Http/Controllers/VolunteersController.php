@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-/* to retrieve data from user model */
-use App\User;
+/* to retrieve data from volunteer model */
+use App\Volunteer;
 
 class VolunteersController extends Controller
 {
@@ -17,7 +17,7 @@ class VolunteersController extends Controller
     public function index()
     {
         // get all the volunteers saved in the database
-        $volunteers = App\Volunteer::all();
+        $volunteers = Volunteer::all()->toArray();
         
         return view('volunteers.index', compact('volunteers'));
     }
@@ -51,7 +51,7 @@ class VolunteersController extends Controller
      */
     public function show($id)
     {
-       $volunteerName = App\Volunteer::find($id)->user()->name;
+       $volunteerName = Volunteer::find($id)->user()->name;
          
     }
 

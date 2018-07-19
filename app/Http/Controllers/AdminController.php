@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Http\Request; 
+
+/* to access volunteer model */
+use App\Volunteer;
 
 class AdminController extends Controller
 {
@@ -25,6 +28,9 @@ class AdminController extends Controller
     
     public function admin()
     {
-        return view('admin.admin');
+	// get all the volunteers saved in the database
+        $volunteers = Volunteer::all()->toArray();
+ 
+        return view('admin.admin', compact('volunteers'));
     }
 }
