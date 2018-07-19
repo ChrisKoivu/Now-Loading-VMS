@@ -22,12 +22,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('volunteers','VolunteersController');
 
 
+
+
 /**
  * route for admin area
  */
 Route::get('/admin', 'AdminController@admin')    
     ->middleware('is_admin')    
     ->name('admin');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
