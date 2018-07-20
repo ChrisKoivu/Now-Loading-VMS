@@ -8,7 +8,7 @@ class Skill extends Model
 {
     /**
      * Fields for this model
-     * Skill
+     * skill
      */
 
 
