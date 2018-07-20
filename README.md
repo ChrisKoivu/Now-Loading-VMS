@@ -24,7 +24,8 @@ https://www.mamp.info/en/
 Install Composer https://getcomposer.org/download/
 
 After installing per the directions, run this command: 
-mv composer.phar /usr/local/bin/composer 
+
+    mv composer.phar /usr/local/bin/composer 
 
 now you can type 'composer' to run on the command line.
 
