@@ -55,10 +55,9 @@ Seed status table by entering "php artisan db:seed"
 
 # Create User at Command Line
 
-First add user authorization to the project by typing:
-    <code>
+First add user authorization to the project by typing:     
     php artisan make:auth
-    </code>
+     
 
 To create a standard user at the command line, do the following:
 
