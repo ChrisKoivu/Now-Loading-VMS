@@ -24,7 +24,8 @@ https://www.mamp.info/en/
 Install Composer https://getcomposer.org/download/
 
 After installing per the directions, run this command: 
-mv composer.phar /usr/local/bin/composer 
+
+    mv composer.phar /usr/local/bin/composer 
 
 now you can type 'composer' to run on the command line.
 
@@ -53,8 +54,20 @@ Build database by entering "php artisan migrate"
 
 Seed status table by entering "php artisan db:seed"
 
+# Where to find the Model, View, and Controller files
+* Controllers are stored in app/Http/Controllers
+* Models are stored in the app folder, ex. User.php
+* Views are stored in the resources/views folder in a folder 
+corresponding to the controller name
+
 # Create User at Command Line
-To create a standard user at the command line, do the following:
+
+First add user authorization to the project by typing:
+
+    php artisan make:auth
+     
+
+To create a standard user at the command line, type the following:
 
  
     php artisan tinker
@@ -67,6 +80,12 @@ To create a standard user at the command line, do the following:
 
 
 # Create  Admin User
+
+I have created a is_admin middleware class to verify a user is an admin. It is 
+registered in the Kernel.php file under 'is_admin'. The admin route calls this 
+middleware and verifies the user is an admin before the AdminController processes
+the request.
+
 To designate a registered user as an admin, type the following
 at the command line:<br>
      
