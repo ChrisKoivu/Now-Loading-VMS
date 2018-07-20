@@ -54,6 +54,12 @@ Build database by entering "php artisan migrate"
 Seed status table by entering "php artisan db:seed"
 
 # Create User at Command Line
+
+First add user authorization to the project by typing:
+    <code>
+    php artisan make:auth
+    </code>
+
 To create a standard user at the command line, do the following:
 
  
