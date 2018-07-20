@@ -53,6 +53,12 @@ Build database by entering "php artisan migrate"
 
 Seed status table by entering "php artisan db:seed"
 
+# Where to find the Model, View, and Controller files
+* Controllers are stored in app/Http/Controllers
+* Models are stored in the app folder, ex. User.php
+* Views are stored in the resources/views folder in a folder 
+corresponding to the controller name
+
 # Create User at Command Line
 
 First add user authorization to the project by typing:
