@@ -66,7 +66,7 @@ First add user authorization to the project by typing:
     php artisan make:auth
      
 
-To create a standard user at the command line, do the following:
+To create a standard user at the command line, type the following:
 
  
     php artisan tinker
