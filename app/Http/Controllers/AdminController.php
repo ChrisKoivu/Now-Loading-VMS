@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request; 
 
 /* to access volunteer model */
@@ -29,8 +30,16 @@ class AdminController extends Controller
     public function admin()
     {
 	// get all the volunteers saved in the database
-        $volunteers = Volunteer::all()->toArray();
+        //$volunteers = Volunteer::all()->toArray();
  
+        $volunteers = DB::table('volunteers')
+         ->join('statuses', 'volunteers.status_id', '=', 'statuses.id')
+         ->join('users', 'volunteers.user_id', '=', 'users.id')
+         ->select('volunteers.*', 'statuses.status','users.email')
+         ->get();
+         print_r($volunteers);
+        
+
         return view('admin.admin', compact('volunteers'));
     }
 }

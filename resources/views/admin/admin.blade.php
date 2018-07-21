@@ -14,7 +14,7 @@
         <table id ="volunteers">          
           <tr><th>Name</th><th>Status</th><th>Email</th><th>Home Phone</th><th>Work Phone</th><th>Cell Phone</th><th>Action</th></tr>
         @foreach($volunteers as $volunteer)
-          <tr><td>{{$volunteer['first_name']  . ' '}} {{$volunteer['last_name']}}</td></tr>        
+          <tr><td>{{$volunteer->first_name . ' '}} {{$volunteer->last_name}}</td><td>{{$volunteer->status}}</td><td>{{$volunteer->email}}</td></tr>        
         @endforeach
         </table>    
        @else
