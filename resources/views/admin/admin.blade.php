@@ -2,22 +2,25 @@
 @extends('layouts.app')
 @section('content') 
     <div class="container">
-        <br />
+        
         
         @auth
-            <!-- The user is authenticated... -->
-            <h4>Administrator Panel</h4>
-            <h2>Volunteers</h2>
-            @if (count($volunteers) > 0)
-                @foreach($volunteers as $volunteer)
-            
-                    <!-- do something here -->
-                    <p>{{$volunteer['first_name']  . ' '}} {{$volunteer['last_name']}}</p>
-                    
-                @endforeach
-            @else
-                <?php echo 'No volunteer records found'; ?>
-            @endif
+
+        <h3>Administrator Panel</h3>
+        <hr>
+        <h5>Volunteers</h5>
+       
+        @if (count($volunteers))
+        <table id ="volunteers">          
+          <tr><th>Name</th><th>Status</th><th>Email</th><th>Home Phone</th><th>Work Phone</th><th>Cell Phone</th><th>Action</th></tr>
+        @foreach($volunteers as $volunteer)
+          <tr><td>{{$volunteer['first_name']  . ' '}} {{$volunteer['last_name']}}</td></tr>        
+        @endforeach
+        </table>    
+       @else
+         <?php echo 'No volunteer records found'; ?>
+       @endif
+        
         @endauth
 
     </div>
