@@ -35,11 +35,9 @@ class AdminController extends Controller
         $volunteers = DB::table('volunteers')
          ->join('statuses', 'volunteers.status_id', '=', 'statuses.id')
          ->join('users', 'volunteers.user_id', '=', 'users.id')
-         ->select('volunteers.*', 'statuses.status','users.email')
-         ->get();
-         print_r($volunteers);
-        
-
-        return view('admin.admin', compact('volunteers'));
+         ->join('demographics','demographics.volunteers_id','=','volunteers.id')
+         ->select('volunteers.*', 'statuses.status','users.email', 'demographics.home_phone', 
+         'demographics.work_phone', 'demographics.cell_phone')->get();
+         return view('admin.admin', compact('volunteers'));
     }
 }
