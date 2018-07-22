@@ -20,7 +20,7 @@
           <td>{{$volunteer->cell_phone}} </td>
           <td>
             <a href="{{action('VolunteersController@edit', $volunteer->id)}}" class="btn btn-warning">Edit</a>
-        </td>
+          </td>
           </tr>        
         @endforeach
         </table>    
