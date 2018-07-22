@@ -7,13 +7,29 @@ use Illuminate\Database\Eloquent\Model;
 class Education extends Model
 {
     /**
+     * Author: Chris Koivu
+     * Team: Now Loading
+     * Date: 7/14/18
+     *
      * Fields for this model:
      * --------------------
-     * Degree
-     * School
+     * degree
+     * school
+     * volunteers_id
      * 
      * 
      */
+
+        /**
+         * The attributes that are mass assignable.
+         *
+         * @var array
+         */
+
+        protected $fillable = [
+            'degree', 'school', 'volunteers_id'
+        ];
+
 
     /**
      * Get the volunteer that the education is associated with.

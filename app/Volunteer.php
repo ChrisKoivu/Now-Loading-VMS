@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Volunteer extends Model
 {
     /**
-     * fields from the User Model
+     * Author: Chris Koivu
+     * Team: Now Loading
+     * Date: 7/14/18
+     *
+     * Fields imported from the User Model
      * ------------------------------
      *  'name', 'email', 'password'
      *  
@@ -23,12 +27,10 @@ class Volunteer extends Model
      *  1 - Pending Approval, 2 - Approved, 3 - Disapproved,
      *  4 - Inactive
      * 
-     *  Eloquent relationship takes care of this:
-     *  --------------------------
-     *  user_id - references to users table 
+      
+     * Only Admin can edit or add volunteer data
+     * if authorized by the isAdmin middleware
      * 
-     * if authorized by the isAdmin middleware ###
-     * Administrator adds the volunteer data. 
      * 
      * 
      */
@@ -39,10 +41,9 @@ class Volunteer extends Model
          * @var array
          */
 
-        // to deal with Mass Assignment
         protected $fillable = [
             'first_name', 'last_name','dl_on_file', 
-            'ss_card_on_file', 'status_id',
+            'ss_card_on_file', 'status_id','user_id'
         ];
 
     

@@ -8,18 +8,33 @@ class Demographic extends Model
 {
 
     /**
-     * Fields for this model:
-     * Street Address 
-     * City
-     * State
-     * Zip
-     * Home Phone
-     * Work Phone
-     * Cell Phone
+     * Author: Chris Koivu
+     * Team: Now Loading
+     * Date: 7/14/18
      * 
+     * Fields for this model:
+     * street_address
+     * city
+     * state
+     * zip
+     * home_phone
+     * work_phone
+     * cell_phone
+     * volunteers_id
      * 
      */
 
+      /**
+         * The attributes that are mass assignable.
+         *
+         * @var array
+         */
+
+        protected $fillable = [
+            'street_address', 'city','state', 
+            'zip', 'home_phone','work_phone',
+            'cell_phone', 'volunteers_id'
+        ];
 
     /**
      * Get the volunteer that the demographic is associated with.

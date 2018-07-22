@@ -7,6 +7,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+
+    /**
+     * Author: Chris Koivu
+     * Team: Now Loading
+     * Date: 7/14/18
+     */
+
     use Notifiable;
 
     const ADMIN_ROLE = 'admin';
@@ -24,7 +31,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','role'
     ];
 
     /**
