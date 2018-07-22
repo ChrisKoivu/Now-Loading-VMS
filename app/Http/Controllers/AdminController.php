@@ -34,10 +34,8 @@ class AdminController extends Controller
     
     public function admin()
     {
-	// get all the volunteers saved in the database
-        //$volunteers = Volunteer::all()->toArray();
- 
-        $volunteers = DB::table('volunteers')
+        // create a volunteers object with the fields we need
+	    $volunteers = DB::table('volunteers')
          ->join('statuses', 'volunteers.status_id', '=', 'statuses.id')
          ->join('users', 'volunteers.user_id', '=', 'users.id')
          ->join('demographics','demographics.volunteers_id','=','volunteers.id')
