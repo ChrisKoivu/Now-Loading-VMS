@@ -11,7 +11,7 @@
         <h5>Volunteers</h5>
        
         @if (count($volunteers))
-        <table id ="volunteers">          
+        <table id ="volunteers">      
           <tr><th>Name</th><th>Status</th><th>Email</th><th>Home Phone</th><th>Work Phone</th><th>Cell Phone</th><th>Action</th></tr>
         @foreach($volunteers as $volunteer)
           <tr><td>{{$volunteer->first_name . ' '}} {{$volunteer->last_name}}</td>
