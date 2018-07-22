@@ -10,6 +10,11 @@ use App\Volunteer;
 
 class AdminController extends Controller
 {
+    /**
+     * Author: Chris Koivu
+     * Team: Now Loading
+     * Date: 7/14/18
+     */
 
     public function __construct()
     {
