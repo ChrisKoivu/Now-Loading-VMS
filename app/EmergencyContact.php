@@ -13,6 +13,7 @@ class EmergencyContact extends Model
      *
      * Fields for this model 
      * ----------------------
+     * 
      * name
      * street_address
      * city
