@@ -1,0 +1,4 @@
+Type this command to seed the database:
+
+
+php artisan db:seed --class=VolunteersTableSeeder
