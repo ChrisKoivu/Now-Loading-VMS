@@ -11,11 +11,11 @@ class VolunteersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 50)->create()->each(function ($u) {
-            $u->volunteers()->save(factory(App\Volunteer::class)->make());
-            
-            // seed related tables
-            //$u->volunteers()->demographics()->save(factory(App\Demographic::class)->make());
-          });
+         //create 10 volunteers
+        factory(App\Volunteer::class, 10)->create()->each(function ($volunteer) {
+            // seed demographics table with a demographic object
+            $volunteer->demographics()->save(factory(App\Demographic::class)->make(['volunteer_id'=>$volunteer->id]));     
+        });
+
     }
 }
