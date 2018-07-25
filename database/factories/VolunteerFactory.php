@@ -20,5 +20,8 @@ $factory->define(App\Volunteer::class, function (Faker $faker) {
         'dl_on_file' => 1,
  	    'ss_card_on_file' => 1,
         'status_id' => 1,
+        'user_id' => function () {
+            return factory(App\User::class)->create()->id;
+        }
     ];
 });
