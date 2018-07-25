@@ -24,7 +24,7 @@ class CreateEmergencyContactsTable extends Migration
             $table->string('work_phone');
             $table->string('email_address');
             // FK to volunteers table
-            $table->integer('volunteers_id');
+            $table->integer('volunteer_id');
             $table->timestamps();
         });
     }

@@ -27,7 +27,7 @@ class Education extends Model
          */
 
         protected $fillable = [
-            'degree', 'school', 'volunteers_id'
+            'degree', 'school', 'volunteer_id'
         ];
 
 

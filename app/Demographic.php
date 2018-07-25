@@ -33,7 +33,7 @@ class Demographic extends Model
         protected $fillable = [
             'street_address', 'city','state', 
             'zip', 'home_phone','work_phone',
-            'cell_phone', 'volunteers_id'
+            'cell_phone', 'volunteer_id'
         ];
 
     /**

@@ -18,7 +18,7 @@ class CreateEducationTable extends Migration
             $table->string('degree');
             $table->string('school');     
             // FK to volunteers table
-            $table->integer('volunteers_id');
+            $table->integer('volunteer_id');
             $table->timestamps();
         });
     }

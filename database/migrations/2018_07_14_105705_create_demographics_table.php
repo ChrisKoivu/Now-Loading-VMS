@@ -23,7 +23,7 @@ class CreateDemographicsTable extends Migration
             $table->string('work_phone');
             $table->string('cell_phone');
             // FK to volunteers table
-            $table->integer('volunteers_id');
+            $table->integer('volunteer_id');
             $table->timestamps();
         });
     }
