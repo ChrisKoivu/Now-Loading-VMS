@@ -18,7 +18,7 @@ class CreateOpportunitiesTable extends Migration
             $table->string('name');
             $table->string('description');
             // FK to volunteers table
-            $table->integer('volunteers_id');
+            $table->integer('volunteer_id');
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ class CreateSkillsTable extends Migration
             $table->increments('id');
             $table->string('skill');
             // FK to volunteers table
-            $table->integer('volunteers_id');
+            $table->integer('volunteer_id');
             $table->timestamps();
         });
     }

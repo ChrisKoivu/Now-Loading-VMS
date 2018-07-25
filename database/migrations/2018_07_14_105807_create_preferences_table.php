@@ -18,7 +18,7 @@ class CreatePreferencesTable extends Migration
             $table->string('hours_available');
             $table->string('location');      
             // FK to volunteers table
-            $table->integer('volunteers_id');
+            $table->integer('volunteer_id');
             $table->timestamps();
         });
     }
