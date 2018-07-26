@@ -17,7 +17,8 @@ class VolunteersTableSeeder extends Seeder
             $volunteer->demographics()->save(factory(App\Demographic::class)->make(['volunteer_id'=>$volunteer->id])); 
             $volunteer->education()->save(factory(App\Education::class)->make(['volunteer_id'=>$volunteer->id])); 
             $volunteer->emergency_contact()->save(factory(App\EmergencyContact::class)->make(['volunteer_id'=>$volunteer->id]));
-            $volunteer->preference()->save(factory(App\Preference::class)->make(['volunteer_id'=>$volunteer->id]));        
+            $volunteer->preference()->save(factory(App\Preference::class)->make(['volunteer_id'=>$volunteer->id]));
+            $volunteer->skills()->save(factory(App\Skill::class)->make(['volunteer_id'=>$volunteer->id]));        
         });
 
     }
