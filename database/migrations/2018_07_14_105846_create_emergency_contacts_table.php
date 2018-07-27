@@ -23,8 +23,11 @@ class CreateEmergencyContactsTable extends Migration
             $table->string('home_phone');
             $table->string('work_phone');
             $table->string('email_address');
+
             // FK to volunteers table
-            $table->integer('volunteer_id');
+            $table->integer('volunteer_id')->unsigned();
+            $table->foreign('volunteer_id')->references('id')->on('volunteers');
+            
             $table->timestamps();
         });
     }
@@ -36,6 +39,7 @@ class CreateEmergencyContactsTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('emergency_contacts');
     }
 }

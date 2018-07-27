@@ -22,8 +22,11 @@ class CreateDemographicsTable extends Migration
             $table->string('home_phone');
             $table->string('work_phone');
             $table->string('cell_phone');
+
             // FK to volunteers table
-            $table->integer('volunteer_id');
+            $table->integer('volunteer_id')->unsigned();
+            $table->foreign('volunteer_id')->references('id')->on('volunteers');
+            
             $table->timestamps();
         });
     }
@@ -35,6 +38,7 @@ class CreateDemographicsTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('demographics');
     }
 }

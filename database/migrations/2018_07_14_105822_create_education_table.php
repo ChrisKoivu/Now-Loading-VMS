@@ -17,8 +17,11 @@ class CreateEducationTable extends Migration
             $table->increments('id');
             $table->string('degree');
             $table->string('school');     
+            
             // FK to volunteers table
-            $table->integer('volunteer_id');
+            $table->integer('volunteer_id')->unsigned();
+            $table->foreign('volunteer_id')->references('id')->on('volunteers');
+            
             $table->timestamps();
         });
     }
@@ -30,6 +33,7 @@ class CreateEducationTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('education');
     }
 }
