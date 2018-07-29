@@ -15,7 +15,7 @@ class ProfessionalLicense extends Model
          * ---------------------
          * name
          * description
-         * volunteers_id
+         * demographic_id
          * 
          */
 
@@ -26,7 +26,7 @@ class ProfessionalLicense extends Model
          */
 
         protected $fillable = [
-            'name','description', 'volunteers_id'
+            'name','description', 'demographic_id'
         ];
 
 
@@ -35,8 +35,8 @@ class ProfessionalLicense extends Model
          * Get the volunteer that the professional licenses are 
          * associated with.
          */
-        public function volunteer()
+        public function demographic()
         {
-            return $this->belongsTo('App\Volunteer');
+            return $this->belongsTo('App\Demographic');
         }
 }

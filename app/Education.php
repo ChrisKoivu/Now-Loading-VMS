@@ -15,7 +15,7 @@ class Education extends Model
      * --------------------
      * degree
      * school
-     * volunteers_id
+     * demographic_id
      * 
      * 
      */
@@ -27,15 +27,15 @@ class Education extends Model
          */
 
         protected $fillable = [
-            'degree', 'school', 'volunteer_id'
+            'degree', 'school', 'demographic_id'
         ];
 
 
     /**
      * Get the volunteer that the education is associated with.
      */
-    public function volunteer()
+    public function demographic()
     {
-        return $this->belongsTo('App\Volunteer');
+        return $this->belongsTo('App\Demographic');
     }
 }

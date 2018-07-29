@@ -22,7 +22,9 @@ class EmergencyContact extends Model
      * home_phone
      * work_phone
      * email_address
-     * volunteers_id
+     * de_id
+     * demographic_id
+     *
      */
 
         /**
@@ -34,15 +36,15 @@ class EmergencyContact extends Model
         protected $fillable = [
             'name','street_address', 'city','state', 
             'zip', 'home_phone','work_phone',
-            'cell_phone', 'volunteers_id'
+            'cell_phone', 'demographic_id'
         ];
 
 
     /**
      * Get the volunteer that the emergency contact is associated with.
      */
-    public function volunteer()
+    public function demographic()
     {
-        return $this->belongsTo('App\Volunteer');
+        return $this->belongsTo('App\Demographic');
     }
 }
