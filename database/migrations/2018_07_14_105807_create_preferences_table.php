@@ -19,7 +19,7 @@ class CreatePreferencesTable extends Migration
             $table->string('location');      
             
             // FK to volunteers table
-            $table->integer('volunteer_id')->unigned();
+            $table->integer('volunteer_id')->unsigned();
             $table->foreign('volunteer_id')->references('id')->on('volunteers');
             
 
