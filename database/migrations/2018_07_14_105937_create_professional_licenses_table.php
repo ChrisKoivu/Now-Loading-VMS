@@ -19,8 +19,8 @@ class CreateProfessionalLicensesTable extends Migration
             $table->string('description');
 
             // FK to volunteers table
-            $table->integer('volunteer_id')->unsigned();
-            $table->foreign('volunteer_id')->references('id')->on('volunteers');
+            $table->integer('demographic_id')->unsigned();
+            $table->foreign('demographic_id')->references('id')->on('demographics');
             
             $table->timestamps();
         });
