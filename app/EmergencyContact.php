@@ -43,8 +43,8 @@ class EmergencyContact extends Model
     /**
      * Get the volunteer that the emergency contact is associated with.
      */
-    public function volunteer()
+    public function demographic()
     {
-        return $this->belongsTo('App\Volunteer');
+        return $this->belongsTo('App\Demographic');
     }
 }

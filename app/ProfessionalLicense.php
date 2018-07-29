@@ -35,8 +35,8 @@ class ProfessionalLicense extends Model
          * Get the volunteer that the professional licenses are 
          * associated with.
          */
-        public function volunteer()
+        public function demographic()
         {
-            return $this->belongsTo('App\Volunteer');
+            return $this->belongsTo('App\Demographic');
         }
 }

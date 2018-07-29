@@ -43,4 +43,30 @@ class Demographic extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    /**
+     * Get the education associated with the volunteer.
+     */
+    public function education()
+    {
+        return $this->hasMany('App\Education');
+    }
+
+    /**
+     * Get the emergency contact associated with the volunteer.
+     */
+    public function emergency_contact()
+    {
+        return $this->hasOne('App\EmergencyContact');
+    }
+
+    /**
+     * Get the professional licenses associated with the volunteer.
+     */
+    public function professional_licenses()
+    {
+        return $this->hasMany('App\ProfessionalLicense');
+    }
+
+
 }

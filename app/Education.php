@@ -34,8 +34,8 @@ class Education extends Model
     /**
      * Get the volunteer that the education is associated with.
      */
-    public function volunteer()
+    public function demographic()
     {
-        return $this->belongsTo('App\Volunteer');
+        return $this->belongsTo('App\Demographic');
     }
 }
