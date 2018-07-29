@@ -47,14 +47,7 @@ class Volunteer extends Model
         ];
 
     
-    /**
-     * Get the demographics associated with the volunteer.
-     */
-    public function demographics()
-    {
-        return $this->hasOne('App\Demographic');
-    }
-
+   
     /**
      * Get the education associated with the volunteer.
      */

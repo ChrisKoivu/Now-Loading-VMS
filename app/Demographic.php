@@ -20,7 +20,7 @@ class Demographic extends Model
      * home_phone
      * work_phone
      * cell_phone
-     * volunteers_id
+     * user_id
      * 
      */
 
@@ -33,14 +33,14 @@ class Demographic extends Model
         protected $fillable = [
             'street_address', 'city','state', 
             'zip', 'home_phone','work_phone',
-            'cell_phone', 'volunteer_id'
+            'cell_phone', 'user_id'
         ];
 
     /**
      * Get the volunteer that the demographic is associated with.
      */
-    public function volunteer()
+    public function user()
     {
-        return $this->belongsTo('App\Volunteer');
+        return $this->belongsTo('App\User');
     }
 }

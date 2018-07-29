@@ -15,7 +15,7 @@ class ProfessionalLicense extends Model
          * ---------------------
          * name
          * description
-         * volunteers_id
+         * demographic_id
          * 
          */
 
@@ -26,7 +26,7 @@ class ProfessionalLicense extends Model
          */
 
         protected $fillable = [
-            'name','description', 'volunteers_id'
+            'name','description', 'demographic_id'
         ];
 
 

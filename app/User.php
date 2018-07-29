@@ -46,9 +46,18 @@ class User extends Authenticatable
     /**
      * Get the volunteer associated with this user.
      */
-    public function volunteers()
+    public function volunteer()
     {
         return $this->hasOne('App\Volunteer');
     }
+
+     /**
+     * Get the demographics associated with the volunteer.
+     */
+    public function demographic()
+    {
+        return $this->hasOne('App\Demographic');
+    }
+
 
 }
