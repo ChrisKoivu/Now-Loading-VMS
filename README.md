@@ -88,14 +88,14 @@ corresponding to the controller name
 * All migrations, factories, and seeds files are located in the 
 database folder
 
-# Create User at Command Line
+# Create Admin User at Command Line
 
 First add user authorization to the project by typing:
 
     php artisan make:auth
      
 
-To create a standard user at the command line, type the following:
+To create a admin user at the command line, type the following:
 
  
     php artisan tinker
@@ -107,7 +107,7 @@ To create a standard user at the command line, type the following:
  
 
 
-# Create  Admin User
+# Designate Admin User
 
 I have created a is_admin middleware class to verify a user is an admin. It is 
 registered in the Kernel.php file under 'is_admin'. The admin route calls this 
