@@ -61,7 +61,9 @@ type this command to create the laravel app, replace 'projectname' with the name
         DB_PASSWORD= Your Database User's password
     </code>
 
-    Build database by entering "php artisan migrate"
+# Build the Database
+    Build database by entering 
+    <code> php artisan migrate </code>
 
 # Seeding the Database
 * Seed status table by entering:
