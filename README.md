@@ -53,9 +53,10 @@ Enter your database credentials in the .env file
 Build database by entering "php artisan migrate"
 
 # Seeding the Database
-Seed status table by entering:
+* Seed status table by entering:
    <code>php artisan db:seed</code>
-Seed Volunteer database tables and relations by entering:
+   
+* Seed Volunteer database tables and relations by entering:
     <code>php artisan db:seed --class=VolunteersTableSeeder </code>
 
 # Where to find the Model, View, and Controller files
