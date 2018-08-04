@@ -69,10 +69,12 @@ type this command to create the laravel app, replace 'projectname' with the name
 
 # Seeding the Database
 * Seed status table by entering:
+
         php artisan db:seed
    
 * Seed Volunteer database tables and relations by entering:
-    <code>php artisan db:seed --class=VolunteersTableSeeder </code>
+
+        php artisan db:seed --class=VolunteersTableSeeder
 
 # Where to find the Model, View, and Controller files
 * Controllers are stored in app/Http/Controllers
