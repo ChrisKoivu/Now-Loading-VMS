@@ -48,9 +48,7 @@ type this command to create the laravel app, replace 'projectname' with the name
     
     composer create-project --prefer-dist laravel/laravel projectname
 
-Enter your database credentials in the .env file
 
-Build database by entering "php artisan migrate"
 # Entering your Database credentials
 * Locate the .env.example file in your root and update 
   this section to match your database credentials:
@@ -62,6 +60,9 @@ Build database by entering "php artisan migrate"
      DB_USERNAME= Your Database User Name
      DB_PASSWORD= Your Database User's password
     </code>
+
+    Build database by entering "php artisan migrate"
+
 # Seeding the Database
 * Seed status table by entering:
    <code>php artisan db:seed</code>
