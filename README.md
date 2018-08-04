@@ -85,6 +85,8 @@ type this command to create the laravel app, replace 'projectname' with the name
 * Models are stored in the app folder, ex. User.php
 * Views are stored in the resources/views folder in a folder 
 corresponding to the controller name
+* All migrations, factories, and seeds files are located in the 
+database folder
 
 # Create User at Command Line
 
