@@ -67,7 +67,7 @@ type this command to create the laravel app, replace 'projectname' with the name
 
 # Seeding the Database
 * Seed status table by entering:
-   <code>php artisan db:seed</code>
+        php artisan db:seed
    
 * Seed Volunteer database tables and relations by entering:
     <code>php artisan db:seed --class=VolunteersTableSeeder </code>
