@@ -62,8 +62,9 @@ type this command to create the laravel app, replace 'projectname' with the name
     
 
 # Build the Database
-    Build database by entering 
-    <code> php artisan migrate </code>
+* Build database by entering 
+        php artisan migrate
+    
 
 # Seeding the Database
 * Seed status table by entering:
