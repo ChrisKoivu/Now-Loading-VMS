@@ -52,7 +52,11 @@ Enter your database credentials in the .env file
 
 Build database by entering "php artisan migrate"
 
-Seed status table by entering "php artisan db:seed"
+# Seeding the Database
+Seed status table by entering:
+  php artisan db:seed
+Seed Volunteer database tables and relations by entering:
+  php artisan db:seed --class=VolunteersTableSeeder
 
 # Where to find the Model, View, and Controller files
 * Controllers are stored in app/Http/Controllers
