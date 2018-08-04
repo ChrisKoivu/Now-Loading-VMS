@@ -44,11 +44,16 @@ make sure your PHP installation has these requirements:
 
 MAMP & Wampserver will take care of these requirements
 
-type this command to create the laravel app, replace 'projectname' with the name of the application
+type this command to create the laravel app, replace 'projectname' with the name of the application,
+or if cloning this repo, follow the Git steps
     
     composer create-project --prefer-dist laravel/laravel projectname
 
-
+# Git
+    Please clone this repository and create your own branch for development.
+    Then these branches can be merged into the master for the final project.
+    
+   
 # Entering your Database credentials
 * Locate the .env.example file in your root and update 
   this section to match your database credentials:
