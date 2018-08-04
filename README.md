@@ -52,18 +52,16 @@ Enter your database credentials in the .env file
 
 Build database by entering "php artisan migrate"
 # Entering your Database credentials
-* Locate the .env.example file in your root and
-  update this section to match your database credentials
-  
-  <code>
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE= Your Database Name
-    DB_USERNAME= Your Database User Name
-    DB_PASSWORD= Your Database User's password
-  </code>
-
+* Locate the .env.example file in your root and update 
+  this section to match your database credentials:
+    <code>
+     DB_CONNECTION=mysql
+     DB_HOST=127.0.0.1
+     DB_PORT=3306
+     DB_DATABASE= Your Database Name
+     DB_USERNAME= Your Database User Name
+     DB_PASSWORD= Your Database User's password
+    </code>
 # Seeding the Database
 * Seed status table by entering:
    <code>php artisan db:seed</code>
