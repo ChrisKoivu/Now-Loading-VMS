@@ -64,6 +64,7 @@ type this command to create the laravel app, replace 'projectname' with the name
         DB_USERNAME= Your Database User Name
         DB_PASSWORD= Your Database User's password
     
+Then save the file as .env
 
 # Build the Database
 * Build database by entering 
